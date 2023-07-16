@@ -12,17 +12,49 @@
 		<title>Etch A Sketch</title>
 	</head>
 	<body>
-		<header><h1>Etch A Sketch</h1></header>
-		<main id="grid-container"></main>
-		<footer>
-			Made by &nbsp;
-			<a
-				href="https://github.com/selimbiber/Etch-A-Sketch"
-				title="GitHub: selimbiber"
-				target="_blank"
-				>Selim Biber</a
-			>
-		</footer>
+		<main id="container">
+			<section id="menu-section">
+				<h1>Etch A Sketch</h1>
+				<label for="grid-sizes" id="select-grid-sizes"
+					>Select Grid Size:
+					<select name="grid-sizes" id="grid-sizes">
+						<option value="4">4 x 4</option>
+						<option value="8">8 x 8</option>
+						<option value="12">12 x 12</option>
+						<option value="16" selected>16 x 16</option>
+						<option value="24">24 x 24</option>
+						<option value="32">32 x 32</option>
+						<option value="40">40 x 40</option>
+						<option value="64">64 x 64</option>
+						<option value="96">96 x 96</option>
+					</select>
+				</label>
+				<label for="pen-color"
+					>Choose Pen Color:
+					<input type="color" name="pen-color" id="pen-color" />
+				</label>
+				<label for="theme-color">
+					Choose Theme Color:
+					<input
+						type="color"
+						name="theme-color"
+						id="theme-color"
+						value="#ffffff"
+				/></label>
+				<button id="rainbow-mode">Rainbow Mode</button>
+				<button id="default-mode">Default Mode</button>
+				<button id="eraser-btn">Eraser</button>
+				<button id="clear-btn">Clear</button>
+				<a
+					href="https://github.com/selimbiber/Etch-A-Sketch"
+					title="GitHub: selimbiber"
+					target="_blank"
+					>Selim Biber
+					<img src="./mark-github.svg" alt="github icon" id="github-icon"
+				/></a>
+			</section>
+			<section id="grid-section"></section>
+		</main>
 	</body>
 	<script src="./main.js"></script>
 </html>

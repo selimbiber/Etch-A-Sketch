@@ -32,18 +32,15 @@ body {
     font-size: 1.6rem;
     min-height: 100vh;
     max-width: 100vw;
-    scroll-behavior: smooth;
-    text-rendering: optimizeSpeed;
-    line-height: 1.5;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
+    scroll-behavior: smooth;
+    text-rendering: optimizeSpeed;
+    line-height: 1.5;
     font-family: Arial, Helvetica, sans-serif;
-}
-
-ul[class],
-ol[class] {
-    list-style: none;
+    background-color: aqua;
 }
 
 a:not([class]) {
@@ -62,10 +59,6 @@ textarea:focus {
 img {
     max-width: 100%;
     display: block;
-    }
-
-article > * + * {
-    margin-top: 1em;
 }
 
 input,
@@ -76,37 +69,107 @@ select {
 }
 /*****/
 
-header {
-    text-align: center;
-}
-
-#grid-container {
+#container {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 5rem auto;
+    gap: 1rem;
 }
 
-.grid-row {
+h1 {
+    text-align: center;
+    font-size: 1.5rem;
+    text-decoration: line-through;
+    margin-bottom: auto;
+}
 
+#menu-section {
+    height: 32.2rem;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    border: 1.6px solid black;
+    box-shadow: 0 0 .5rem 1px black;
+    background-color: white;
+}
+
+label {
+    width: 90%;
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: .1rem 0;
+}
+
+select {
+    text-align: center;
+}
+
+select, input {
+    margin-top: .3rem;
+    max-height: 2rem;
+    width: 50%;
+}
+
+button {
+    font-size: 1.2rem;
+    margin-top: .2rem;
+    min-height: 2.5rem;
+    width: 90%;
+    cursor: pointer;
+}
+
+#rainbow-mode {
+    background-image: linear-gradient(90deg, red, blue);
+    color: white;
+    font-weight: bold;
+}
+
+#default-mode, #eraser-btn, #clear-btn {
+    background-color: black;
+    color: white;
+    font-weight: bold;
+}
+
+.active-btn {
+    opacity: .5;
+} 
+
+#grid-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: fit-content;
+    width: fit-content;
+    box-shadow: 0 0 .5rem 1px black;
+    border: 1px solid black;
+    background-color: white;
 }
 
 .grid-box {
-    height: 2.8rem;
-    width: 2.8rem;
+    height: 2rem;
+    width: 2rem;
     border: .1rem solid black;
+    cursor:crosshair;
 }
 
-footer {
-    display: flex;
-    justify-content: center;
+a {
     margin-top: auto;
-    width: 100%;
-    font-weight: bold;
-}
-
-footer > a {
     font-weight: bold;
     color: black;
     text-decoration:underline;
+    width: 90%;
+}
+
+#github-icon {
+    display: inline;
+    color: black;
+    height: 1.5rem;
+    width: 1.5rem;
+    transition: transform 0.3s ease-in-out;
+}
+
+#github-icon:hover {
+    transform: rotate(360deg) scale(1.2);
 }
