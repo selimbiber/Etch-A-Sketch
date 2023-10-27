@@ -1,4 +1,4 @@
-# [Project of Etch A Sketch](https://www.theodinproject.com/lessons/foundations-etch-a-sketch)
+# [Scribble Box (DEMO)](https://www.theodinproject.com/lessons/foundations-etch-a-sketch)
 
 ## [My Source of Inspiration | İlham Aldığım Kaynak](https://michalosman.github.io/etch-a-sketch/)
 
